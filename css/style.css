@@ -1,4 +1,61 @@
-h1 {
-  color: red;
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #0E0D0D;
+  padding: 0.1em;
+}
+
+li {
+  display: inline;
+  font-size: 1em;
+}
+
+ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding-right: .4em;
+  padding-left: .4em;
+}
+
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px) {
+  ul {
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: #0E0D0D;
+  padding: 0em 1em 1em 1em;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px) {
+  footer img {
+    display: block;
+    margin: 0 auto 2.5em auto;
+  }
+}
+
+/*big screen*/
+@media screen and (min-width: 481px) {
+  footer p {
+    padding: 3em 1em 0em 1em;
+  }
+  footer img {
+    float: right;
+  }
 }
 /*# sourceMappingURL=style.css.map */
