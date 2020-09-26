@@ -1,22 +1,61 @@
 body 
     font-family: sans-serif
 
+
+//////////////
+/// Header ///
+////////////// 
+
+header 
+    background-color: #FFF3F3
+
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px)
+    .desktoponly
+        display: none
+
+    header img
+        max-width: 50vw
+        padding: 1em 1em 1em 1em
+    
+/*big screen*/
+@media screen and (min-width: 481px)
+    header > div //flexbox container
+        display: flex
+        justify-content: space-around
+        align-content: flex-end
+        padding: 2em 1em 2em 1em
+
+    header img 
+        max-height: 100%
+        width: 100%
+        padding 2em 1em 2em 1em
+
+    header .flexitem1
+        flex-basis: 30%
+        align-self: center
+
+    header .flexitem2
+        flex-basis: 60%
+        align-self: center
+
+
 //////////////////////
 /// Navigation Bar ///
 //////////////////////   
     
 nav
-    background-color: #0E0D0D
+    background-color: #8E1616
     padding: 0.1em
 
-li 
+nav li 
     display: inline
     font-size: 1em
 
-ul 
+nav ul 
     padding-inline-start: 0
 
-li a 
+nav li a 
     color: white
     text-decoration: none
     padding-right: .4em
@@ -24,9 +63,125 @@ li a
 
 /*small screen* --> mobile first!*/
 @media screen and (max-width: 480px)
-    ul
+    nav ul
         text-align: center  // --> also valid for the footer
 
+////////////
+/// Main ///
+//////////// 
+
+
+// frist part - background image + headline
+#firstpart
+    background-image: url('../img/traffic.jpg') // path seeminlgy must be relative to the css not the html, not covered in pre-work!
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: blue
+
+#firstpart h1 
+    color: white
+
+///import css-variables from 
+
+#firstpart h1 
+    padding: 1em 1em 1em 1em
+
+#firstpart p 
+    padding: 1em 1em 1em 1em
+
+// input box
+
+#thebox
+    background-color: white
+    opacity: 75%
+    width: 80%
+    margin: auto
+    position: relative
+    bottom: -2em
+
+// first flexbox
+.container1
+    display: flex
+    flex-flow: row wrap
+    align-content: space-around
+    justify-content: space-around
+
+.flexitem3
+    flex-basis: 40%
+    padding: 0.5em 0.5em 0.5em 0.5em
+    margin: 0.5em 0.5em 0.5em 0.5em
+    //border: 3px solid green
+
+.flexitem3 input
+    width: 96%
+    //height: 50%
+
+.flexitem3 select
+    width: 100%
+    height: 55%
+
+input[type=text]
+    background-color: rgb(255,255,255)
+
+
+
+// second flexbox
+
+.container3
+    display: flex
+    flex-flow: column wrap
+    align-content: space-around
+    
+.flexitem4
+    flex:basis 40% 
+    border: 3px solid red
+    align-self: center
+    justify-self: center
+    margin: 0.5em 0.5em 0.5em 0.5em
+    
+.container li
+    content: \2705
+
+#result 
+    padding: 1em 1em 3em 1em
+
+
+    
+// second part - gray box
+#mission
+    background-color: #CECECE
+    text-align: center
+    padding: 3em 1em 2em 1em
+
+.firstline
+    font-size: larger
+
+
+
+// third part - info boxes: flex 'em!
+.container
+    display: flex
+    flex-align: center
+    justify-content: space-around
+
+.flexitem
+    flex-basis: 35%
+    border: 1px solid lightgrey
+    margin: 2em 1em 2em 1em
+    padding: 1em
+
+
+.flexitem hr 
+    border-top 1px solid black
+
+// list styling
+
+.container ul
+    list-style: none
+
+.container ul li::before
+    content: "\2714"
+    color: #8FD2D3
 
 
 
@@ -37,6 +192,9 @@ li a
 footer 
     background-color: #0E0D0D
     padding: 0em 1em 1em 1em
+
+footer nav 
+    background-color: #0E0D0D
 
 footer p 
     color: white

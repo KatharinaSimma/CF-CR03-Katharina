@@ -2,22 +2,69 @@ body {
   font-family: sans-serif;
 }
 
+header {
+  background-color: #FFF3F3;
+}
+
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px) {
+  .desktoponly {
+    display: none;
+  }
+  header img {
+    max-width: 50vw;
+    padding: 1em 1em 1em 1em;
+  }
+}
+
+/*big screen*/
+@media screen and (min-width: 481px) {
+  header > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    padding: 2em 1em 2em 1em;
+  }
+  header img {
+    max-height: 100%;
+    width: 100%;
+  }
+  header .flexitem1 {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header .flexitem2 {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 nav {
-  background-color: #0E0D0D;
+  background-color: #8E1616;
   padding: 0.1em;
 }
 
-li {
+nav li {
   display: inline;
   font-size: 1em;
 }
 
-ul {
+nav ul {
   -webkit-padding-start: 0;
           padding-inline-start: 0;
 }
 
-li a {
+nav li a {
   color: white;
   text-decoration: none;
   padding-right: .4em;
@@ -26,14 +73,145 @@ li a {
 
 /*small screen* --> mobile first!*/
 @media screen and (max-width: 480px) {
-  ul {
+  nav ul {
     text-align: center;
   }
+}
+
+#firstpart {
+  background-image: url("../img/traffic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blue;
+}
+
+#firstpart h1 {
+  color: white;
+}
+
+#firstpart h1 {
+  padding: 1em 1em 1em 1em;
+}
+
+#firstpart p {
+  padding: 1em 1em 1em 1em;
+}
+
+#thebox {
+  background-color: white;
+  opacity: 75%;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  bottom: -2em;
+}
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexitem3 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.flexitem3 input {
+  width: 96%;
+}
+
+.flexitem3 select {
+  width: 100%;
+  height: 55%;
+}
+
+input[type=text] {
+  background-color: white;
+}
+
+.container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.flexitem4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.container li {
+  content: \2705;
+}
+
+#result {
+  padding: 1em 1em 3em 1em;
+}
+
+#mission {
+  background-color: #CECECE;
+  text-align: center;
+  padding: 3em 1em 2em 1em;
+}
+
+.firstline {
+  font-size: larger;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexitem {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  border: 1px solid lightgrey;
+  margin: 2em 1em 2em 1em;
+  padding: 1em;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container ul li::before {
+  content: "\2714";
+  color: #8FD2D3;
 }
 
 footer {
   background-color: #0E0D0D;
   padding: 0em 1em 1em 1em;
+}
+
+footer nav {
+  background-color: #0E0D0D;
 }
 
 footer p {

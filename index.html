@@ -10,9 +10,127 @@
 <!--Don't forget to make regular git commits!-->
 <body>
 
-    <header></header>
-    <nav></nav>
-    <main></main>
+    <header>
+        <div>
+            <div  class="flexitem1"><img src="img/logo.png" alt="logo of the company"></div>
+            <div class="desktoponly flexitem2"><a href="https://www.codefactory.wien/"> <img src="img/banner.png" alt="link to Full Stack Web Development course in Vienna"> </a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Team">Team</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+<!--First Part contains headline + background image + main box-->
+        <div id="firstpart">
+            
+            <h1>Car Insurance</h1>
+
+            <div id="thebox" >
+                    <p>Great coverage begins with a custom quote</p>
+                <div class="container1">
+                    <div class="flexitem3"> 
+                        <span>Your name:</span><br>
+                        <input id="yourName" type="text" name="yourName" value="">
+                    </div>  
+
+                    <div class="flexitem3">
+                        <span>Your Age:</span><br>
+                        <input id="age" class=input" type="number" name="age" value="">
+                    </div>
+
+                    <div class="flexitem3">
+                        <span>Country:</span><br>
+                        <select id="country" name="country" value="">
+                            
+                            <option value="Hungary">Hungary</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Austria">Austria</option>
+                        </select>
+                    </div>
+
+                    <div class="flexitem3">
+                        <span>Horsepower of your car:</span><br>
+                        <input id="horses" type="number" name="Horsepower of your Car" value="">
+                    </div>
+                
+                </div>
+
+                <div class="container3">
+                    <div class="flexitem4">
+                        <button id="button" type="button">Calculate!</button>
+                    </div>
+
+                    <p id="result" class="flexitem4">Printed calculation goes here</p>
+                </div>
+                
+            </div>  
+           
+        </div>
+
+<!--Second Part contains text + gray background -->
+        <div id="mission">
+            <span class="firstline"><b>Uncomplicated car coverage</b></span><br>
+            <span>Understanding your coverage option shouldn't be so hard.</span><br>
+            <span>We'll guide you though available coverage types,</span><br>
+            <span>starting with who and what is covered.</span><br>
+        </div>
+
+<!--Third Part contains two flexbox elements -->
+        <div class="container">
+            <div class="flexitem">
+                <h3>What comes standard</h3> 
+                <p> The coverage you need </p>
+                    <ul>
+                        <li>Bodily Injury Liablity</li>
+                        <li>Property Damage</li>
+                        <li>Medical Payments</li>
+                    </ul>
+                <hr>
+                <p><b>Benefits</b></p>
+                <p> 12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+            </div>
+            <div class="flexitem">
+                <h3>Add-on protection & coverage</h3> 
+                <p>For more peace of mind </p>
+                    <ul>
+                        <li>Better Car Replacement</li>
+                        <li>Towing & Labor</li>
+                        <li>Rental Car Coverage</li>
+                    </ul>
+                <hr>
+                <p><b>Earned Benefits</b></p>
+                <p> Accident Forgiveness&#185; | New Car Replacement&trade;
+                </p>
+            </div>
+                
+          
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
     <footer>
         <nav>
             <ul>
@@ -23,14 +141,8 @@
         <img src="img/logo-inv.png" alt="logo of the company">
         <p>Katharina Simma - Code Factory 2020</p>
     </footer>
-
-
-
-
-
-
-
-    
+  
     <script src="js/script.js"></script> 
+
 </body>
 </html>
