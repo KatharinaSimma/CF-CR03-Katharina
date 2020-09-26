@@ -1,0 +1,22 @@
+var employees = `[{
+    "firstName":"Niki",
+    "lastName":"Lauda",
+    "role":"Boss",
+    "quote":"I like planes now.",
+    "salary":500000,
+    "image":"src='https://cdn.pixabay.com/photo/2015/07/11/23/02/plane-841441_960_720.jpg'"
+},{
+   "firstName":"Katharina",
+    "lastName":"Simma",
+    "role":"IT",
+    "quote":"I don't like cars. I just wanna code.",
+    "salary":50000,
+    "image":"src='https://cdn.pixabay.com/photo/2017/11/16/09/32/matrix-2953869_960_720.jpg'"
+},{
+    "firstName":"Beatrix",
+    "lastName":"Besenstiel",
+    "role":"Sales",
+    "quote":"I am professional.",
+    "salary":30000,
+    "image":"src='https://cdn.pixabay.com/photo/2017/08/30/17/27/business-woman-2697954_960_720.jpg'"
+}]`

@@ -14,10 +14,12 @@ function insurance(){
     }
 // part #2 tests user input and throws an error message if need be
     insuranceOffer = insurance.toFixed(2);
-        if (isNaN(insuranceOffer) == true || document.getElementById("yourName").value != true){
+    console.log(document.getElementById("result"))
+        if (isNaN(insuranceOffer) == true) {
             document.getElementById("result").innerHTML = "Please fill in all fields correctly to get a quote!"
         } else {
-            document.getElementById("result").innerHTML = document.getElementById("yourName").value + ", your insurance costs " +  insuranceOffer +  "€! "}
+            document.getElementById("result").innerHTML = document.getElementById("yourName").value + ", your insurance costs " +  insuranceOffer +  "€! "
+        }
 }
 
 // Call Function as by event
