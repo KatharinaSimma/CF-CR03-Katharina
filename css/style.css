@@ -78,26 +78,27 @@ nav li a {
   }
 }
 
-#firstpart {
+.firstpart {
   background-image: url("../img/traffic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: blue;
 }
 
-#firstpart h1 {
+.firstpart h1 {
   color: white;
 }
 
-#firstpart h1 {
+.firstpart h1 {
   padding: 1em 1em 1em 1em;
 }
 
-#firstpart p {
+.firstpart p {
   padding: 1em 1em 1em 1em;
+  text-align: center;
 }
 
-#thebox {
+.thebox {
   background-color: white;
   opacity: 75%;
   width: 80%;
@@ -161,8 +162,10 @@ input[type=text] {
   margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
-.container li {
-  content: \2705;
+#button {
+  background-color: #339235;
+  padding: 0.5em 2em 0.5em 2em;
+  border-radius: 10px;
 }
 
 #result {
@@ -188,12 +191,39 @@ input[type=text] {
       justify-content: space-around;
 }
 
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*big screen*/
+@media screen and (min-width: 481px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .flexitem {
   -ms-flex-preferred-size: 35%;
       flex-basis: 35%;
   border: 1px solid lightgrey;
+  border-top: 2px solid black;
   margin: 2em 1em 2em 1em;
   padding: 1em;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  color: #516a94;
 }
 
 .container ul {
@@ -203,6 +233,12 @@ input[type=text] {
 .container ul li::before {
   content: "\2714";
   color: #8FD2D3;
+}
+
+hr {
+  height: 1px;
+  background-color: rgba(206, 206, 206, 0.5);
+  border: none;
 }
 
 footer {

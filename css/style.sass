@@ -72,26 +72,27 @@ nav li a
 
 
 // frist part - background image + headline
-#firstpart
+.firstpart
     background-image: url('../img/traffic.jpg') // path seeminlgy must be relative to the css not the html, not covered in pre-work!
     background-repeat: no-repeat
     background-size: cover
     background-color: blue
 
-#firstpart h1 
+.firstpart h1 
     color: white
 
 ///import css-variables from 
 
-#firstpart h1 
+.firstpart h1 
     padding: 1em 1em 1em 1em
 
-#firstpart p 
+.firstpart p 
     padding: 1em 1em 1em 1em
+    text-align: center
 
 // input box
 
-#thebox
+.thebox
     background-color: white
     opacity: 75%
     width: 80%
@@ -134,16 +135,24 @@ input[type=text]
     
 .flexitem4
     flex:basis 40% 
-    border: 3px solid red
+    //border: 3px solid red
     align-self: center
     justify-self: center
     margin: 0.5em 0.5em 0.5em 0.5em
     
-.container li
-    content: \2705
+
+
+#button
+    background-color: #339235
+    //color: white
+    padding: 0.5em 2em 0.5em 2em
+    border-radius: 10px
+    
+
 
 #result 
     padding: 1em 1em 3em 1em
+
 
 
     
@@ -160,21 +169,33 @@ input[type=text]
 
 // third part - info boxes: flex 'em!
 .container
-    display: flex
+    display:  flex
     flex-align: center
     justify-content: space-around
+
+/*small screen* --> mobile first!*/
+@media screen and (max-width: 480px)
+    .container
+        flex-direction: column
+
+/*big screen*/
+@media screen and (min-width: 481px)
+    .container
+        flex-direction: row
+
 
 .flexitem
     flex-basis: 35%
     border: 1px solid lightgrey
+    border-top: 2px solid black // not my taste at all
     margin: 2em 1em 2em 1em
     padding: 1em
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 
-
-.flexitem hr 
-    border-top 1px solid black
 
 // list styling
+h3 
+    color: rgb(81,106,148)
 
 .container ul
     list-style: none
@@ -183,6 +204,10 @@ input[type=text]
     content: "\2714"
     color: #8FD2D3
 
+hr 
+    height: 1px
+    background-color: rgba(206,206,206,0.5)
+    border: none
 
 
 //////////////
